@@ -101,6 +101,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Journaling_BlockBuilder.h" />
     <ClInclude Include="Journaling_FeatureCollection.h" />
+    <ClInclude Include="Journaling_ScrewManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Block.cpp" />
@@ -111,6 +112,7 @@
     <ClCompile Include="Feature.cpp" />
     <ClCompile Include="Journaling_BlockBuilder.cpp" />
     <ClCompile Include="Journaling_FeatureCollection.cpp" />
+    <ClCompile Include="Journaling_ScrewManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppsCore\AppsCore.vcxproj">

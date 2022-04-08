@@ -8,6 +8,7 @@ namespace AutomationAPI
 {
 
 	class FeatureCollection;
+	class ScrewManager;
 	class RoutingCollection;
 	class PartImpl;
 	/// <summary>
@@ -32,6 +33,8 @@ namespace AutomationAPI
 			* Returns the Feature collection for the part.
 			*/
 			FeatureCollection* Features();
+
+			ScrewManager* ScrewManage();
 
 
 			/**

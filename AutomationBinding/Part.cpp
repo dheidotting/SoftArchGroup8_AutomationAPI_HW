@@ -3,6 +3,7 @@
 #include "..\AppPartOps\PartOps.h"
 #include "AutomationAPI_FeatureCollection.h"
 #include "AutomationAPI_RoutingCollection.h"
+#include "AutomationAPI_ScrewManager.h"
 #include "..\AppPartOps\Journaling_Part.h"
 
 using namespace AutomationAPI;
@@ -15,6 +16,7 @@ namespace AutomationAPI
 
 		FeatureCollection* Features();
 		RoutingCollection* Routing();
+		ScrewManager* ScrewManage();
 
 		virtual ~PartImpl();
 		PartImpl() = delete;
@@ -23,6 +25,7 @@ namespace AutomationAPI
 		int m_guid;
 		FeatureCollection* m_featureCollection;
 		RoutingCollection* m_routingCollection;
+		ScrewManager* m_screwManager;
 
 	};
 }
@@ -78,6 +81,7 @@ AutomationAPI::PartImpl::PartImpl(int guid)
 	m_guid = guid;
 	m_featureCollection = new FeatureCollection(m_guid);
 	m_routingCollection = new RoutingCollection(m_guid);
+	m_screwManager = new ScrewManager(m_guid);
 }
 
 AutomationAPI::PartImpl::~PartImpl()
@@ -105,5 +109,15 @@ AutomationAPI::FeatureCollection* AutomationAPI::PartImpl::Features()
 AutomationAPI::FeatureCollection* AutomationAPI::Part::Features()
 {
 	return m_partImpl->Features();
+}
+
+AutomationAPI::ScrewManager* AutomationAPI::PartImpl::ScrewManage()
+{
+	return m_screwManager;
+}
+
+AutomationAPI::ScrewManager* AutomationAPI::Part::ScrewManage()
+{
+	return m_partImpl->ScrewManage();
 }
 

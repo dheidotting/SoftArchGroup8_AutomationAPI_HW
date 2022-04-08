@@ -64,6 +64,12 @@
     <ClInclude Include="AutomationAPI_WireBuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AutomationAPI_ScrewBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutomationAPI_ScrewManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -100,6 +106,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RoutingCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrewBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrewManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

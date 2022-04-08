@@ -92,6 +92,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AutomationAPI_ScrewBuilder.h" />
+    <ClInclude Include="AutomationAPI_ScrewManager.h" />
     <ClInclude Include="AutomationBindingExports.h" />
     <ClInclude Include="AutomationAPI_Wire.h" />
     <ClInclude Include="AutomationAPI_Block.h" />
@@ -117,6 +119,8 @@
     <ClCompile Include="IBuilder.cpp" />
     <ClCompile Include="Part.cpp" />
     <ClCompile Include="RoutingCollection.cpp" />
+    <ClCompile Include="ScrewBuilder.cpp" />
+    <ClCompile Include="ScrewManager.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="Wire.cpp" />
     <ClCompile Include="WireBuilder.cpp" />
