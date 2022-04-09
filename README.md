@@ -1,15 +1,5 @@
-# SoftwareArchitectureCLassApplication
-This is sandbox code to show proof of concept usages of some principles taught in University of Cincinnati's Software Architecture Class.
-
-This code base will be used for several assignments, but it's value comes from having several libraries in play, as well as some example usages of concepts of singletons, static initializers, journaling, and automation APIs
-
-Additionally, this also shows how to setup a Basic Action to verify a merge request compiles or not.
-
-
-This software to show off some workflows with using Java and automation APIs depends upon a Java Provider to present.  Otherwise a build error will occur.
-
-To Resovle this install a Java JDK (such as Adopt OpenJDK), and then provide the proper header includes and library location.  It is being proposed as future enhancment to make the jvm library be loaded dyanmically.
-
-Or optionally comment out the code in PerformJavaAutomationWorkflow, and turn off building the JavaLoader library.
-
-[Journaling Module Design](documentation_markdown/journaling.md)
+# SoftwareArchitecture Group 8 - Automation API HW
+## Estimation
+We estimated the lab would take about 2 hours.  We got this from the fact the lab had well documented slides and the lab seemed straight forward.  This estimate was fairly accurate as it took around 2:30-3 hours for us to complete as we took a lot of time trying to figure out how to get HTMLs to github.  After trying to get them to push in a readable way, we decided to just put them there inside of a zip file.
+## Doxygen HTML Files
+Note: the htmls are in a zip file.  Apologies for not getting them in an easier to read way but we couldn’t figure out how to get them to our repo as Github was not cooperating.
